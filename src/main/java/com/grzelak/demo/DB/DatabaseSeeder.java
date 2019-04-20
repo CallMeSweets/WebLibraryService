@@ -2,21 +2,24 @@ package com.grzelak.demo.DB;
 
 import com.grzelak.demo.model.Book;
 import com.grzelak.demo.model.Library;
+import org.jsoup.Jsoup;
+import org.jsoup.helper.StringUtil;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.util.Arrays;
 import java.util.List;
 
 @Component
 public class DatabaseSeeder implements CommandLineRunner {
 
+    private static final String NBSP_IN_UTF8 = "\u00a0";
     @Autowired
     private LibraryRepository libraryRepository;
 
@@ -71,6 +74,10 @@ public class DatabaseSeeder implements CommandLineRunner {
         libraryRepository.save(library1);
         libraryRepository.save(library2);
         libraryRepository.save(library3);
+
+
+
+
 
     }
 }
