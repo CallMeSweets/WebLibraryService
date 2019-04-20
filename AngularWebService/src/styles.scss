@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+#imgOWL{
+  margin-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#imgEvent{
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.myTitle{
+  background: #03445A;
+}
+
+.myNavColor{
+  background: crimson;
+}
+
+.myButtonColor{
+  background: white;
+}
+
+.myButtonFontSize{
+  font-size: small;
+}
+
+.buttonNav{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1px;
+}
+
+.tableStyle{
+
+}
+
+.myMargin{
+  margin-top: 10px;
+}
+
+.myTitleText{
+  margin-left: 25px;
+  color: white;
+  font-family: "Cambria Math";
+  text-align: start;
+  margin-top: 25px;
+}
+
+.setAll{
+  width: 99%;
+  height: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}
+
+.wellStyle{
+  border-color: red;
+  border-radius: 10px;
+}
