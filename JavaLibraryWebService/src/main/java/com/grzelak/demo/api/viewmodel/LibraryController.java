@@ -13,22 +13,24 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/libraries")
+@CrossOrigin
 public class LibraryController {
 
     @Autowired
     private LibraryRepository libraryRepository;
 
-    @GetMapping(value = "all")//
+    @GetMapping(value = "/all")//
     List<Library> findAll(){
         return libraryRepository.findAll();
     }
 
-    @GetMapping(value = "{id}")//
+    @GetMapping(value = "/{id}")//
     Library findAll(@PathVariable Long id){
         return libraryRepository.findById(id).get();
     }
 
-    @GetMapping(value = "{id}/info")//
+
+    @GetMapping(value = "/{id}/info")//
     List<String> getLibraryInfo(@PathVariable Long id){
         Library lib = libraryRepository.findById(id).get();
         List<String> infoList = new ArrayList<>();
@@ -38,7 +40,7 @@ public class LibraryController {
         return infoList;
     }
 
-    @GetMapping(value = "all/info")//
+    @GetMapping(value = "/all/info")//
     List<String> getAllInfo(){
         List<Library> libraryList = libraryRepository.findAll();
         List<String> infoList = new ArrayList<>();
@@ -51,37 +53,44 @@ public class LibraryController {
         return infoList;
     }
 
-    @GetMapping(value = "book/{id}")//
+    @GetMapping(value = "/book/{id}")//
     List<Library> findByBookId(@PathVariable Long id){
         return libraryRepository.findLibraryByBookId(id);
     }
 
-    @GetMapping(value = "book", params = "author") //
+    @GetMapping(value = "/book", params = "author") //
     List<Library> findByBookAuthor(@RequestParam("author") String author){
         return libraryRepository.findLibraryByBookAuthor(author);
     }
 
-    @GetMapping(value = "book", params = "title") //
+    @GetMapping(value = "/book", params = "title") //
     List<Library> findByBookTitle(@RequestParam("title") String title){
         return libraryRepository.findLibraryByBookTitle(title);
     }
 
 
-    @GetMapping(value = "books", params = "libraryID") //
+    @GetMapping(value = "/books", params = "libraryID") //
     List<Book> getAllBooksFromLibrary(@RequestParam Long libraryID){
         Library lib = libraryRepository.findById(libraryID).get();
         return lib.getBookList();
     }
 
+    @GetMapping(value = "/books", params = "filter") //
+    List<Book> getAllBooksSearchedByUser(@RequestParam String filter){
+        return libraryRepository.findAllBooksFilter(filter);
+    }
 
 
-    @PostMapping(value = "add") //
+
+
+
+    @PostMapping(value = "/add") //
     @ResponseBody
     void addLibrary(@RequestBody Library library){
         libraryRepository.save(library);
     }
 
-    @PostMapping(value = "add/book", params = "libraryID") //
+    @PostMapping(value = "/add/book", params = "libraryID") //
     @ResponseBody
     void addBook(@RequestParam Long libraryID, @RequestBody Book book){
 
@@ -97,7 +106,7 @@ public class LibraryController {
 
     // library modification
 
-    @PostMapping(value = "{id}/mod", params = {"decision", "change"}) //
+    @PostMapping(value = "/{id}/mod", params = {"decision", "change"}) //
     public void changeLibraryProperties(@PathVariable Long id, @RequestParam("decision") Decision decision, @RequestParam("change") String changes){
 
         Library lib = libraryRepository.findById(id).get();

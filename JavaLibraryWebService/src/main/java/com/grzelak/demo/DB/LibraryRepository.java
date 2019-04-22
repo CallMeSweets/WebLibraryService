@@ -20,6 +20,8 @@ public interface LibraryRepository extends JpaRepository<Library, Long> {
     @Query("SELECT lib FROM Library lib JOIN lib.bookList book WHERE book.author = :author")
     List<Library> findLibraryByBookAuthor(String author);
 
+    @Query("SELECT book FROM Library lib JOIN lib.bookList book WHERE book.author LIKE %:filter% OR book.title LIKE %:filter%")
+    List<Book> findAllBooksFilter(String filter);
 
 
 }
