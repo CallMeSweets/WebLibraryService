@@ -1,0 +1,17 @@
+
+
+<div *ngFor="let book of allBooks$ | async">
+  <ul class="list-group" id="bookTable">
+    <div>
+      <li class="list-group-item" id="bookTable2">
+        Author: {{book.author}}
+      <br>
+        Title: {{book.title}}
+        <br>
+        Description: {{book.descipriton}}
+      </li>
+
+    </div>
+  </ul>
+</div>
+

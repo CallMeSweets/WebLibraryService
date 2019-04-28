@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {SelectComponent} from "../ENUMS/select-component.enum";
+import {DataLinkerService} from "../Services/dataLinkerService/data-linker.service";
 
 @Component({
   selector: 'app-navigation-bar',
@@ -13,7 +15,14 @@ export class NavigationBarComponent implements OnInit {
   isEntered3 = false;
   isEntered4 = false;
 
-  constructor() { }
+
+  private selectedComponent: SelectComponent;
+
+  @Output()
+  private emitter = new EventEmitter();
+
+
+  constructor(private dataLinkerSerive: DataLinkerService) { }
 
   ngOnInit() {
   }
@@ -37,5 +46,29 @@ export class NavigationBarComponent implements OnInit {
 
   changeColor() {
     this.isEntered = !this.isEntered;
+  }
+
+  refreshPage() {
+    location.reload();
+  }
+
+
+
+  emitContact() {
+    this.selectedComponent = SelectComponent.CONTACT;
+    this.emitter.emit(this.selectedComponent);
+  }
+
+  emitLogin() {
+    this.selectedComponent = SelectComponent.LOGIN;
+    this.emitter.emit(this.selectedComponent);
+  }
+
+  emitSearch(value: string) {
+    if(value != ""){
+      this.selectedComponent = SelectComponent.DATA;
+      this.emitter.emit(this.selectedComponent);
+      this.dataLinkerSerive.getBookListObs(value);
+    }
   }
 }

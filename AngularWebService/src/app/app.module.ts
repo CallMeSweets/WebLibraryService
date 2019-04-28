@@ -8,6 +8,11 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { LeftComponent } from './left/left.component';
 import { MainComponent } from './main/main.component';
 import { ImgListComponent } from './img-list/img-list.component';
+import {DataComponent} from "./data/data.component";
+import {LoginComponent} from "./login/login.component";
+import {DataLinkerService} from "./Services/dataLinkerService/data-linker.service";
+import {HttpClientModule} from "@angular/common/http";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +22,16 @@ import { ImgListComponent } from './img-list/img-list.component';
     LeftComponent,
     MainComponent,
     ImgListComponent,
+    DataComponent,
+    LoginComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataLinkerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f639131-e06d-4e5c-abda-a6ba94863c1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../AngularWebService/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryDB.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/libraryDB.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryDB.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/libraryDB.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grzelak/demo/DB/LibraryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grzelak/demo/DB/LibraryRepository.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,36 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
-              <folding>
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-                <element signature="e#1749#1750#0" expanded="true" />
-                <element signature="e#2490#2491#0" expanded="true" />
-                <element signature="e#2537#2538#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="125" selection-start-line="22" selection-start-column="125" selection-end-line="22" selection-end-column="125" />
-              <folding>
-                <element signature="e#0#70#1" expanded="true" />
-                <element signature="e#0#76#1" expanded="true" />
-                <element signature="e#0#78#1" expanded="true" />
-                <element signature="e#0#122#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -70,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -88,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="493">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
@@ -112,9 +98,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DemoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/Configuration/Config.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java" />
       </list>
     </option>
   </component>
@@ -209,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -221,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,6 +270,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,6 +279,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -403,17 +390,20 @@
       <updated>1555871767466</updated>
       <workItem from="1555871770040" duration="1610000" />
       <workItem from="1555920999956" duration="7764000" />
+      <workItem from="1556186878246" duration="251000" />
+      <workItem from="1556192122891" duration="83000" />
+      <workItem from="1556212173075" duration="3100000" />
+      <workItem from="1556446161153" duration="614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9374000" />
+    <option name="totallyTimeSpent" value="13422000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26606685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -422,7 +412,6 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
@@ -438,6 +427,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,32 +446,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2537#2538#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="314">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/Configuration/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -494,21 +467,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/Configuration/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="125" selection-start-line="22" selection-start-column="125" selection-end-line="22" selection-end-column="125" />
-          <folding>
-            <element signature="e#0#70#1" expanded="true" />
-            <element signature="e#0#76#1" expanded="true" />
-            <element signature="e#0#78#1" expanded="true" />
-            <element signature="e#0#122#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>

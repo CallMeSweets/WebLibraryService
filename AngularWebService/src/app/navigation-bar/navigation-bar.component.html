@@ -2,13 +2,13 @@
   <div class="myNavColor">
       <div class="buttonNav">
         <div class="row" style="width: 100%">
-          <div class="col-sm-1"><a href="#" ><button (mouseenter)="changeColor()" (mouseleave)="changeColor()" [class.myButtonColor]="isEntered" type="button" class="btn btn-default">Strona Głowna</button></a></div>
-          <div class="col-sm-1"><a href="#"><div class="myMargin"><button (mouseenter)="changeColor1()" (mouseleave)="changeColor1()" [class.myButtonColor]="isEntered1" type="button" class="btn btn-default" >Logowanie</button></div></a></div>
-          <div class="col-sm-1"><a href="#"><div class="myMargin"><button (mouseenter)="changeColor2()" (mouseleave)="changeColor2()" [class.myButtonColor]="isEntered2" type="button" class="btn btn-default" >Kontakt</button></div></a></div>
+          <div class="col-sm-1"><a href="#" ><button (click)="refreshPage()" (mouseenter)="changeColor()" (mouseleave)="changeColor()" [class.myButtonColor]="isEntered" type="button" class="btn btn-default">Strona Głowna</button></a></div>
+          <div class="col-sm-1"><a href="#"><div class="myMargin"><button (click)="emitLogin()" (mouseenter)="changeColor1()" (mouseleave)="changeColor1()" [class.myButtonColor]="isEntered1" type="button" class="btn btn-default" >Logowanie</button></div></a></div>
+          <div class="col-sm-1"><a href="#"><div class="myMargin"><button (click)="emitContact()" (mouseenter)="changeColor2()" (mouseleave)="changeColor2()" [class.myButtonColor]="isEntered2" type="button" class="btn btn-default" >Kontakt</button></div></a></div>
           <div class="col-sm-1"><a href="#"><button  (mouseenter)="changeColor3()" (mouseleave)="changeColor3()" [class.myButtonColor]="isEntered3" type="button" class="btn btn-default" >Czytelnia on-line</button></a></div>
           <div class="col-sm-3"></div>
-          <div class="col-sm-4">  <div class="myMargin"><input type="text" class="form-control" placeholder="Search"> </div></div>
-          <div class="col-sm-1"><div class="myMargin"><button (mouseenter)="changeColor4()" (mouseleave)="changeColor4()" [class.myButtonColor]="isEntered4" type="submit" class="btn btn-default">Szukaj</button></div></div>
+          <div class="col-sm-4">  <div class="myMargin"><input #inputSearch type="text" class="form-control" placeholder="Search"> </div></div>
+          <div class="col-sm-1"><div class="myMargin"><button (click)="emitSearch(inputSearch.value)" (mouseenter)="changeColor4()" (mouseleave)="changeColor4()" [class.myButtonColor]="isEntered4" type="submit" class="btn btn-default">Szukaj</button></div></div>
         </div>
       </div>
   </div>

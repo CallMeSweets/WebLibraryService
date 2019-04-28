@@ -6,7 +6,7 @@
   </div>
 
   <div>
-    <app-navigation-bar></app-navigation-bar>
+    <app-navigation-bar (emitter)="setComponent($event)"></app-navigation-bar>
   </div>
 
   <div>
@@ -19,7 +19,19 @@
     </div>
 
     <div class="col-sm-10">
-      <app-main></app-main>
+      <div *ngIf="selectedComponent === 1">
+        <app-main></app-main>
+      </div>
+      <div style="margin-top: 40px" *ngIf="selectedComponent === 0">
+        <app-data ></app-data>
+      </div>
+      <div *ngIf="selectedComponent === 2">
+        <app-login></app-login>
+      </div>
+      <div *ngIf="selectedComponent === 3">
+        <app-contact></app-contact>
+      </div>
+
     </div>
 
   </div>

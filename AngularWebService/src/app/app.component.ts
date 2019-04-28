@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {SelectComponent} from "./ENUMS/select-component.enum";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  @Input()
+  private selectedComponent = SelectComponent.MAIN;
+
+
+
   title = 'WebLibraryAngular';
+
+
+  setComponent(selComponent: SelectComponent) {
+    this.selectedComponent = selComponent;
+  }
 }
