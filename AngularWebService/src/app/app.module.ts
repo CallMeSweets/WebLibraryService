@@ -12,8 +12,24 @@ import {DataComponent} from "./data/data.component";
 import {LoginComponent} from "./login/login.component";
 import {DataLinkerService} from "./Services/dataLinkerService/data-linker.service";
 import {HttpClientModule} from "@angular/common/http";
-import { ContactComponent } from './contact/contact.component';
+import {ContactComponent} from './contact/contact.component';
+import {AngularFireModule} from 'angularfire2';
+import {environment} from "../environments/environment";
+import {LoginService} from "./Services/LoginService/login.service";
+import {AuthGuardService} from "./Services/AuthGuard/auth-guard.service";
+import {Routes} from "@angular/router";
+import {AngularFireAuth} from 'angularfire2/auth';
 
+const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full'},
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'dashboard',
+    component: LoginComponent,
+    canActivate: [AuthGuardService],
+    children: []
+  },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,11 +43,12 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent,
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [DataLinkerService],
+  providers: [DataLinkerService, LoginService, AuthGuardService, AngularFireModule, AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
