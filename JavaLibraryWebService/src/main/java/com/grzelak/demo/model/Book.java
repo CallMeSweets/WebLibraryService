@@ -24,7 +24,6 @@ public class Book implements Serializable {
 
     @JsonBackReference
     @ManyToOne(fetch = FetchType.LAZY)
-    @NotNull
     private Library library;
 
     public Book() {

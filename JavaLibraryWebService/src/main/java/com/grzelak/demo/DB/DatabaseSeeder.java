@@ -2,6 +2,7 @@ package com.grzelak.demo.DB;
 
 import com.grzelak.demo.model.Book;
 import com.grzelak.demo.model.Library;
+import com.grzelak.demo.model.LibraryUser;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Document;
@@ -14,17 +15,18 @@ import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Component
 public class DatabaseSeeder implements CommandLineRunner {
 
-    private static final String NBSP_IN_UTF8 = "\u00a0";
+
     @Autowired
     private LibraryRepository libraryRepository;
 
     @Autowired
-    private BookRepository bookRepository;
+    private LibraryUserRepository libraryUserRepository;
 
 
 
@@ -76,7 +78,13 @@ public class DatabaseSeeder implements CommandLineRunner {
         libraryRepository.save(library3);
 
 
+        LibraryUser libraryUser1 = new LibraryUser("Sebastian", "Grzelak", "grz3lak1997@gmail.com", "password1", "505817930", true, new Date(1997, 3, 6));
 
+        libraryUser1.addBook(new Book("Title1", "Author1", "Description1", library1));
+        libraryUser1.addBook(new Book("Title2", "Author2", "Description2", library1));
+        libraryUser1.addBook(new Book("Title3", "Author3", "Description3", library1));
+
+        libraryUserRepository.save(libraryUser1);
 
 
     }

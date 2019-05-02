@@ -3,4 +3,5 @@ export enum SelectComponent {
   MAIN,
   LOGIN,
   CONTACT,
+  REGISTER,
 }

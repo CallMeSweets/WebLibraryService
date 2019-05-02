@@ -16,6 +16,8 @@ export interface Credentials {
 export class LoginService {
 
   readonly authState$: Observable<User | null> = this.fireAuth.authState;
+  
+  private loginStatus = true;
 
   constructor(private fireAuth: AngularFireAuth) { }
 
@@ -23,13 +25,12 @@ export class LoginService {
     return this.fireAuth.auth.currentUser;
   }
 
-  login({email, password}: Credentials){
+  login({email, password}: Credentials) {
     return this.fireAuth.auth.signInWithEmailAndPassword(email, password).then((userData => {
-      console.log(userData);
+      this.loginStatus = true;
     }))
       .catch((Error) => {
-      console.log(Error);
-      console.log(email);
+        this.loginStatus = false;
     });
   }
 
@@ -40,5 +41,9 @@ export class LoginService {
   logout(){
     return this.fireAuth.auth.signOut();
   }
+
+  getLoginStatus(): boolean {
+    return this.loginStatus;
+}
 
 }

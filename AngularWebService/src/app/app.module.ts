@@ -19,6 +19,7 @@ import {LoginService} from "./Services/LoginService/login.service";
 import {AuthGuardService} from "./Services/AuthGuard/auth-guard.service";
 import {Routes} from "@angular/router";
 import {AngularFireAuth} from 'angularfire2/auth';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -41,6 +42,7 @@ const routes: Routes = [
     DataComponent,
     LoginComponent,
     ContactComponent,
+    RegisterComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),

@@ -25,8 +25,12 @@
       <div style="margin-top: 40px" *ngIf="selectedComponent === 0">
         <app-data ></app-data>
       </div>
-      <div *ngIf="selectedComponent === 2">
-        <app-login></app-login>
+      <div *ngIf="selectedComponent === 2" style="margin-top: 40px">
+        <app-login (emitter)="setComponent($event)"></app-login>
+<!--        <app-register></app-register>-->
+      </div>
+      <div *ngIf="selectedComponent === 4">
+                <app-register (emitter)="setComponent($event)"></app-register>
       </div>
       <div *ngIf="selectedComponent === 3">
         <app-contact></app-contact>

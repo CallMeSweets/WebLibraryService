@@ -9,10 +9,16 @@
     <label  for="exampleInputPassword1">Password</label>
     <input  #inputPassword type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
+  <div *ngIf="!loginService.getLoginStatus()">
+    <button (click)="registerToService()" style="color: red; background-color: Transparent; border: none">
+      "Wrong email or password - click here to register"
+    </button>
+  </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button (click)="loginUser(inputEmail.value, inputPassword.value)">Submit</button>
+
 <!--</form>-->
 
