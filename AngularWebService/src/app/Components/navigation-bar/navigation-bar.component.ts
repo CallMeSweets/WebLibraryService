@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {SelectComponent} from "../ENUMS/select-component.enum";
-import {DataLinkerService} from "../Services/dataLinkerService/data-linker.service";
+import {SelectComponent} from "../../ENUMS/select-component.enum";
+import {DataLinkerService} from "../../Services/dataLinkerService/data-linker.service";
 
 @Component({
   selector: 'app-navigation-bar',

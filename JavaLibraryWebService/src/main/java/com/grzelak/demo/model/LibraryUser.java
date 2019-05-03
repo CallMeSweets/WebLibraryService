@@ -19,7 +19,7 @@ public class LibraryUser {
     @Size(min = 3, max = 25)
     private String lastName;
     @Size(min = 3, max = 25)
-    private String emial;
+    private String email;
     @Size(min = 8, max = 25)
     private String password;
     @Size(min = 9, max = 9)
@@ -34,10 +34,10 @@ public class LibraryUser {
 
     public LibraryUser(){}
 
-    public LibraryUser(String firstName, String lastName, String emial, String password, String phoneNumber, boolean gender, Date birthDate) {
+    public LibraryUser(String firstName, String lastName, String email, String password, String phoneNumber, boolean gender, Date birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.emial = emial;
+        this.email = email;
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
@@ -80,12 +80,12 @@ public class LibraryUser {
         this.lastName = lastName;
     }
 
-    public String getEmial() {
-        return emial;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmial(String emial) {
-        this.emial = emial;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {LoginService} from "../Services/LoginService/login.service";
+import {LoginService} from "../../Services/LoginService/login.service";
 import {catchError} from "rxjs/operators";
-import {SelectComponent} from "../ENUMS/select-component.enum";
+import {SelectComponent} from "../../ENUMS/select-component.enum";
 
 @Component({
   selector: 'app-login',

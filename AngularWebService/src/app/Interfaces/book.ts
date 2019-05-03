@@ -5,8 +5,4 @@ export interface Book {
 
 }
 
-export enum WhichComponent {
-  DATA,
-  LOGIN,
-  MAIN,
-}
+

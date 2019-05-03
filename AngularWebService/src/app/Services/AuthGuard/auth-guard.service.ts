@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from "@angular/router";
-import {Observable} from "rxjs";
-import {map} from "rxjs/operators";
-import {LoginService} from "../LoginService/login.service";
+import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from '@angular/router';
+import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
+import {LoginService} from '../LoginService/login.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ import {LoginService} from "../LoginService/login.service";
 export class AuthGuardService implements CanActivate{
 
   constructor( private authService: LoginService,
-               private router: Router,) { }
+               private router: Router ) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.authService.authState$.pipe(map(state => {

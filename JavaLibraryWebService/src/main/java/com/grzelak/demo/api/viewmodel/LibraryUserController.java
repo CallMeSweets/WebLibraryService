@@ -22,6 +22,10 @@ public class LibraryUserController {
       return libraryUserRepository.findAll();
     }
 
+    @GetMapping(value = "/{id}")
+    public LibraryUser getUserById(@PathVariable Long id){
+        return libraryUserRepository.findById(id).get();
+    }
 
     @GetMapping("/{id}/books")
     public List<Book> getAllUserBooks(@PathVariable Long id){

@@ -2,19 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f639131-e06d-4e5c-abda-a6ba94863c1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngularWebService/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/ENUMS/select-component.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/ENUMS/select-component.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/Interfaces/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Interfaces/book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/Services/AuthGuard/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Services/AuthGuard/auth-guard.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/Services/LoginService/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Services/LoginService/login.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/Services/dataLinkerService/data-linker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Services/dataLinkerService/data-linker.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/contact/contact.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/contact/contact.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/contact/contact.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/contact/contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/contact/contact.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/data/data.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/data/data.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/data/data.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/data/data.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/img-list/img-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/img-list/img-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/img-list/img-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/img-list/img-list.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/img-list/img-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/img-list/img-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/left/left.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/left/left.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/left/left.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/left/left.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/left/left.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/left/left.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/main/main.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/navigation-bar/navigation-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/navigation-bar/navigation-bar.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/navigation-bar/navigation-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/navigation-bar/navigation-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/register/register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/register/register.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/top/top.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/top/top.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/top/top.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/top/top.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AngularWebService/src/app/top/top.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../AngularWebService/src/app/Components/top/top.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryDB.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/libraryDB.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/DatabaseSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/DatabaseSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +48,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -34,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -42,16 +64,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="32">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,7 +78,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="239">
               <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
             </state>
           </provider>
@@ -69,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/DatabaseSeeder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1224">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -78,46 +96,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+            <state relative-caret-position="229">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1344#1345#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-                <element signature="e#1618#1619#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1167#1168#0" expanded="true" />
-                <element signature="e#1215#1216#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1391#1392#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-                <element signature="e#1545#1546#0" expanded="true" />
-                <element signature="e#1583#1584#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1717#1718#0" expanded="true" />
-                <element signature="e#1750#1751#0" expanded="true" />
-                <element signature="e#1779#1780#0" expanded="true" />
-                <element signature="e#1824#1825#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
-                <element signature="e#1894#1895#0" expanded="true" />
-                <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1974#1975#0" expanded="true" />
-                <element signature="e#2016#2017#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,11 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#70#1" expanded="true" />
-                <element signature="e#0#76#1" expanded="true" />
-                <element signature="e#0#78#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,11 +117,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryUserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="187">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#0#100#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
+            <state relative-caret-position="561">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
@@ -201,17 +177,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryUserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="200" />
+    <option name="y" value="107" />
+    <option name="width" value="1200" />
+    <option name="height" value="646" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -219,8 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,7 +279,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AngularWebService" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -417,16 +393,18 @@
       <workItem from="1556446161153" duration="614000" />
       <workItem from="1556553911990" duration="607000" />
       <workItem from="1556800163236" duration="10020000" />
+      <workItem from="1556885341278" duration="5223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24049000" />
+    <option name="totallyTimeSpent" value="29272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27249357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27570695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -518,17 +496,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/DatabaseSeeder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -539,115 +541,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Library.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#100#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/LibraryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#70#1" expanded="true" />
-            <element signature="e#0#76#1" expanded="true" />
-            <element signature="e#0#78#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/DB/DatabaseSeeder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1406#1407#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2016#2017#0" expanded="true" />
-          </folding>
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/api/viewmodel/LibraryUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="32">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/LibraryUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grzelak/demo/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="239">
           <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
         </state>
       </provider>

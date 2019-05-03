@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Observable} from "rxjs";
-import { AngularFireAuth } from 'angularfire2/auth'
-import {User} from "firebase";
+import {Observable} from 'rxjs';
+import { AngularFireAuth } from 'angularfire2/auth';
+import {User} from 'firebase';
 
 
 export interface Credentials {
@@ -34,9 +34,6 @@ export class LoginService {
     });
   }
 
-  register({email, password}: Credentials) {
-    return this.fireAuth.auth.createUserWithEmailAndPassword(email, password);
-  }
 
   logout(){
     return this.fireAuth.auth.signOut();

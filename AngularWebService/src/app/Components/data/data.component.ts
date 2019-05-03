@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {DataLinkerService} from "../Services/dataLinkerService/data-linker.service";
-import {Observable} from "rxjs";
-import {Book} from "../Interfaces/book";
+import {DataLinkerService} from '../../Services/dataLinkerService/data-linker.service';
+import {Observable} from 'rxjs';
+import {Book} from '../../Interfaces/book';
 
 @Component({
   selector: 'app-data',
