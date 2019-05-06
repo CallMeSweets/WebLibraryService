@@ -17,19 +17,16 @@ import {AngularFireModule} from 'angularfire2';
 import {environment} from "../environments/environment";
 import {LoginService} from "./Services/LoginService/login.service";
 import {AuthGuardService} from "./Services/AuthGuard/auth-guard.service";
-import {Routes} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {AngularFireAuth} from 'angularfire2/auth';
 import { RegisterComponent } from './Components/register/register.component';
+import { RootComponent } from './Components/root/root.component';
+import { MainPageComponent } from './Components/main-page/main-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full'},
-  { path: 'login', component: LoginComponent },
-  {
-    path: 'dashboard',
-    component: LoginComponent,
-    canActivate: [AuthGuardService],
-    children: []
-  },
+  { path: '', component: AppComponent},
+  { path: 'logowanie', component: LoginComponent },
+
 ];
 @NgModule({
   declarations: [
@@ -43,12 +40,22 @@ const routes: Routes = [
     LoginComponent,
     ContactComponent,
     RegisterComponent,
+    RootComponent,
+    MainPageComponent,
+
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    RouterModule.forRoot([
+      {path: '' , component: MainPageComponent},
+      {path: 'user/:name', component: MainPageComponent},
+      {path: 'logowanie', component: LoginComponent},
+      {path: 'rejestracja', component: RegisterComponent},
+      {path: 'kontakt', component: ContactComponent},
+    ])
   ],
   providers: [DataLinkerService, LoginService, AuthGuardService, AngularFireModule, AngularFireAuth],
   bootstrap: [AppComponent]

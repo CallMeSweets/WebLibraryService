@@ -1,6 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {SelectComponent} from "../../ENUMS/select-component.enum";
 import {DataLinkerService} from "../../Services/dataLinkerService/data-linker.service";
+import {LoginService} from "../../Services/LoginService/login.service";
 
 @Component({
   selector: 'app-navigation-bar',
@@ -21,8 +22,7 @@ export class NavigationBarComponent implements OnInit {
   @Output()
   private emitter = new EventEmitter();
 
-
-  constructor(private dataLinkerSerive: DataLinkerService) { }
+  constructor(private dataLinkerSerive: DataLinkerService, private loginService: LoginService) { }
 
   ngOnInit() {
   }
@@ -62,6 +62,7 @@ export class NavigationBarComponent implements OnInit {
   emitLogin() {
     this.selectedComponent = SelectComponent.LOGIN;
     this.emitter.emit(this.selectedComponent);
+    console.log(this.selectedComponent.valueOf());
   }
 
   emitSearch(value: string) {

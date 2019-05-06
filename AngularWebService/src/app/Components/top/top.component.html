@@ -5,7 +5,7 @@
     <div class="col-sm-1">
       <img id="imgOWL" src="/assets/sowa.PNG"/>
     </div>
-    <div class="col-sm-11">
+    <div class="col-sm-9">
       <h3 class="myTitleText">
         BIBLIOTEKA PUBLICZNA
         <h5>
@@ -18,5 +18,16 @@
 
       </h3>
     </div>
-  </div>
+    <div class="col-sm-2">
+      <div class="dropdown">
+        <button class="dropbtn">{{userEmailToShow}}</button>
+        <div class="dropdown-content">
+          <a href="#" (click)="logOutUser()">log out</a>
+          <a href="#">change date</a>
+          <a href="#">my books</a>
+        </div>
+      </div>
+    </div>
+  </div >
+
 </div>

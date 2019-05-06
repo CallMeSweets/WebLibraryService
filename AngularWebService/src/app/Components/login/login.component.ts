@@ -1,7 +1,8 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {LoginService} from "../../Services/LoginService/login.service";
-import {catchError} from "rxjs/operators";
-import {SelectComponent} from "../../ENUMS/select-component.enum";
+import {LoginService} from '../../Services/LoginService/login.service';
+import {Router} from '@angular/router';
+
+
 
 @Component({
   selector: 'app-login',
@@ -10,12 +11,15 @@ import {SelectComponent} from "../../ENUMS/select-component.enum";
 })
 export class LoginComponent implements OnInit {
 
-  private registration = true;
+
 
   @Output()
   private emitter = new EventEmitter();
 
-  constructor(private loginService: LoginService) { }
+  @Output()
+  private emitterEmail = new EventEmitter();
+
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -23,12 +27,17 @@ export class LoginComponent implements OnInit {
 
   loginUser(email: string, password: string) {
 
-      this.loginService.login({email, password});
+    this.loginService.login({email, password}).then(() => {
+      this.emitterEmail.emit(email);
+      this.loginService.changeLoginStatus(true);
+      this.router.navigate(['/user', email.substring(0, email.indexOf('@'))]).catch((Error) => {console.log('Navigate Email Error' + Error); });
+      this.loginService.emitEmail(email);
+    }).catch((Error) => {
+      this.loginService.changeLoginStatus(false);
+    });
+
 
   }
 
 
-  registerToService() {
-    this.emitter.emit(SelectComponent.REGISTER);
-  }
 }
